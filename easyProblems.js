@@ -7,3 +7,14 @@ function FirstReverse(str) {
 }
 
 FirstReverse("Hello world");
+
+
+// Implementing the factorial operator
+function FirstFactorial(num) {
+  var fact = 1;
+    for (var i = num; i >= 2; i--) {
+      fact *= i ;
+    }
+  return fact;
+  // code goes here
+}
