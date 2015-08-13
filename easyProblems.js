@@ -18,3 +18,5 @@ function FirstFactorial(num) {
   return fact;
   // code goes here
 }
+
+// Trying the third problem here
