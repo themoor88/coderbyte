@@ -41,3 +41,12 @@ function LongestWord(sen) {
   }
   return longest;
 }
+
+// Letter Changes
+function LetterChanges(str) {
+
+  // code goes here
+  return str;
+
+}
+// Time for some regex
