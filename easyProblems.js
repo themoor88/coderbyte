@@ -48,5 +48,7 @@ function LetterChanges(str) {
   // code goes here
   return str;
 
+  // if statement
+
 }
 // Time for some regex
