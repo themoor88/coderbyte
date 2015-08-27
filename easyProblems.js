@@ -64,7 +64,7 @@ function FormattedDivision(num1,num2) {
 
 
 // Implementing the each function
-var each = function(collection, iterator) {
+Array.prototype.each = function(collection, iterator) {
   if (collection.constructor === Array) {
     for (var i = 0; i < collection.length; i++) {
       var index = i;
