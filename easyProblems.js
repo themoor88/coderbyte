@@ -1,4 +1,4 @@
-// Reverse a string
+hh// Reverse a string
 function FirstReverse(str) {
   var rev = '';
   for (var i = str.length - 1; i >= 0; i--) {
@@ -60,4 +60,24 @@ function FormattedDivision(num1,num2) {
   // code goes here
   return num1 + num2;
 
+}
+
+
+// Implementing the each function
+var each = function(collection, iterator) {
+  if (collection.constructor === Array) {
+    for (var i = 0; i < collection.length; i++) {
+      var index = i;
+      iterator(collection[i], index, collection);
+    }
+  }
+  if (collection.constructor === Object) {
+    for (var key in collection) {
+      iterator(collection[key], key, collection);
+    }
+  }
+};
+
+var callback = function(value, index, collection) {
+  console.log(value, index, collection);
 }
