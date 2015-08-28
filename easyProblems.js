@@ -81,3 +81,14 @@ Array.prototype.each = function(collection, iterator) {
 var callback = function(value, index, collection) {
   console.log(value, index, collection);
 }
+
+// Implementing the filter function
+var filter = function(collection, test) {
+  var filtered = [];
+    each(collection, function(item) {
+      if (test(item)) {
+        filtered.push(item);
+      }
+    });
+  return filtered;
+};
